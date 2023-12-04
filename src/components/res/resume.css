@@ -1,0 +1,132 @@
+.resume__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+}
+
+.timeline{
+    background-color: var(--container-color);
+    padding-top: 1.875rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.timeline__item {
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.timeline__item:nth-child{
+    padding-bottom: 0;
+}
+
+.timeline__item::before {
+    content: '';
+    width: 1px;
+    height: 97%;
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    background-color: var(--first-color);
+  }
+  
+  .timeline .icon-briefcase,
+  .timeline .icon-graduation {
+    position: absolute;
+    left: -0.8380rem; /* Corrected the left value */
+    top: 0;
+    font-size: var(--h2-font);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 0.4375rem;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease; /* Add a smooth transition for the glow effect */
+  }
+  
+  .timeline .icon-briefcase:hover,
+  .timeline .icon-graduation:hover {
+    box-shadow: 0 0 10px rgba(254, 7, 7, 0.8); /* Adjust the values for your desired glow effect */
+    color: rgb(255, 209, 92);
+    background-color: var(--title-color);
+  }
+
+  .timeline__date{
+    color: #8b88b1;
+    font-size: var(--samll-font);
+  }
+
+  .timeline__title{
+    font-size: var(--h3-font);
+    margin: 0.5rem 0;
+  }
+
+  .timeline__marks{
+    font-size: 16px;
+    color: rgb(53, 51, 51);
+    text-decoration: underline;
+  }
+
+  .resume__container {
+    grid-template-columns: repeat(1, 1fr); /* Single column for small screens by default */
+    column-gap: 1.875rem;
+}
+
+/* Responsive styles for medium-sized screens */
+@media only screen and (min-width: 768px) {
+    .resume__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.timeline {
+    background-color: var(--container-color);
+    padding-top: 1.875rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.timeline__item {
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.timeline__item:nth-child {
+    padding-bottom: 0;
+}
+
+.timeline__item::before {
+    content: '';
+    width: 1px;
+    height: 97%;
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    background-color: var(--first-color);
+}
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation {
+    position: absolute;
+    left: -0.8380rem; /* Corrected the left value */
+    top: 0;
+    font-size: var(--h2-font);
+    color: var(--first-color);
+    background-color: var(--container-color);
+    padding: 0.4375rem;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.timeline .icon-briefcase:hover,
+.timeline .icon-graduation:hover {
+    box-shadow: 0 0 10px rgba(254, 7, 7, 0.8);
+    color: rgb(255, 209, 92);
+    background-color: var(--title-color);
+}
+
+.timeline__date {
+    color: #8b88
+}

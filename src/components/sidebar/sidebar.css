@@ -1,0 +1,127 @@
+.aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--body-color);
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    width: 110px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* z-index: 10; */
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.nav__link{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    transition: .3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.copyright{
+    color: hsl(245, 15%, 65%);
+    font-size: 0.80rem;
+    transform: rotate(360deg);
+    writing-mode: vertical-rl;
+}
+
+.icon-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: var(--first-color);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add a smooth transition for visibility */
+  }
+  
+  .nav__link:hover .icon-text {
+    opacity: 1; /* Make text visible on hover */
+  }
+
+  .aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--body-color);
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    width: 110px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.nav__link {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.copyright {
+    color: hsl(245, 15%, 65%);
+    font-size: 0.80rem;
+    transform: rotate(360deg);
+    writing-mode: vertical-rl;
+}
+
+.icon-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: var(--first-color);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add a smooth transition for visibility */
+}
+
+.nav__link:hover .icon-text {
+    opacity: 1; /* Make text visible on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .aside {
+        width: 100%; /* Make the aside full width on smaller screens */
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .nav__link {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}

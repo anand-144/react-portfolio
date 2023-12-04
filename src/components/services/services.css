@@ -1,0 +1,106 @@
+.services__container{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+}
+
+.services__card{
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px var(--title-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.services__card:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 5px var(--first-color);
+}
+
+.services__img{
+    margin-bottom: 1.25rem;
+}
+
+.services__title{
+    font-size: var(--h3-font);
+    margin-bottom: 1rem;
+    color: rgb(255, 179, 0);
+    text-transform: capitalize;
+}
+
+.services__description{
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.services__card:nth-child(2) .services__title {
+    color: var(--title-color);
+}
+
+.services__card:nth-child(5) .services__title {
+    color: var(--title-color);
+}
+
+.services__card:nth-child(8) .services__title {
+    color: var(--title-color);
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default to a single column for small screens */
+    column-gap: 1.875rem;
+}
+
+/* Responsive styles for medium-sized screens */
+@media only screen and (min-width: 768px) {
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (min-width: 1024px) {
+    .services__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.services__card {
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px var(--title-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.services__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px 5px var(--first-color);
+}
+
+.services__img {
+    margin-bottom: 1.25rem;
+}
+
+.services__title {
+    font-size: var(--h3-font);
+    margin-bottom: 1rem;
+    color: rgb(255, 179, 0);
+    text-transform: capitalize;
+}
+
+.services__description {
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.services__card:nth-child(2) .services__title,
+.services__card:nth-child(5) .services__title,
+.services__card:nth-child(8) .services__title {
+    color: var(--title-color);
+}

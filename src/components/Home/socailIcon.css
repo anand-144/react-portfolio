@@ -1,0 +1,49 @@
+.insta {
+    color: var(--title-color);
+    transition: .3s;
+  }
+  
+  .twwit {
+    color: var(--title-color);
+    transition: .3s;
+  }
+  
+  .face {
+    color: var(--title-color);
+    transition: .3s;
+  }
+  
+  .link {
+    color: var(--title-color);
+    transition: .3s;
+  }
+  
+  .git {
+    color: var(--title-color);
+    transition: .3s;
+  }
+
+  .insta:hover {
+    color: #E1306C;
+    border-bottom: 2px solid #E1306C; /* Add spacing with border-bottom */
+  }
+  
+  .twwit:hover {
+    color: black;
+    border-bottom: 2px solid black; /* Add spacing with border-bottom */
+  }
+  
+  .face:hover {
+    color: rgb(24, 119, 242);
+    border-bottom: 2px solid rgb(24, 119, 242); /* Add spacing with border-bottom */
+  }
+  
+  .link:hover {
+    color: rgb(10, 102, 194);
+    border-bottom: 2px solid rgb(10, 102, 194); /* Add spacing with border-bottom */
+  }
+  
+  .git:hover {
+    color: rgb(43, 49, 55);
+    border-bottom: 2px solid rgb(43, 49, 55); /* Add spacing with border-bottom */
+  }

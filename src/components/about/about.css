@@ -1,0 +1,247 @@
+.fa-dragon {
+  color: goldenrod;
+}
+
+.fa-code,
+.fa-mobile,
+.fa-react,
+.fa-image,
+.fa-video,
+.fa-chart-simple,
+.fa-database,
+.fa-python,
+.fa-js,
+.fa-node,
+.fa-css3 {
+    color: var(--first-color);
+    font-size: 25px;
+}
+
+.fa-code:hover{
+    color: cadetblue;
+}
+.fa-mobile:hover{
+    color: var(--text-color);
+}
+.fa-react:hover{
+    color: #61dbfb;
+}
+.fa-image:hover {
+    color: rgb(234, 90, 234);
+  }
+  
+.fa-video:hover{
+    color: rgb(249, 146, 3);
+}
+.fa-chart-simple:hover{
+    color: cornflowerblue;
+}
+.fa-database:hover{
+    color: darkolivegreen;
+}
+.fa-python:hover{
+    color: #306998;
+}
+.fa-js:hover{
+    color: rgb(255, 170, 0);
+    background: black;
+}
+.fa-node:hover{
+    background: black;
+    color: green;
+}
+
+.fa-css3:hover {
+    color: rgb(21, 0, 255);
+}
+
+.about__container {
+  grid-template-columns: 3fr 9fr;
+}
+
+.about__data{
+  position: relative;
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+}
+
+
+
+.about__data::before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+}
+
+.about__description{
+  margin-bottom: 1rem;
+}
+
+.about__skills{
+  margin-top: 20px; /* Add spacing between Download CV and skills grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap between columns */
+}
+
+.skills__titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skills__name{
+  font-size: var(--normal-font);
+  font-weight: var(--font-medium);
+}
+
+.skills__number{
+  line-height: 1.2;
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar{
+  background-color: var(--text-color);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--text-color);
+}
+
+.Frontend{
+  width: 80%;
+  background-color: cadetblue;
+}
+
+.Design{
+  width: 40%;
+  background-color: rgb(255, 209, 92);
+}
+
+.developement{
+  width: 65%;
+  background-color: #61dbfb;;
+}
+
+.photo{
+  width: 65%;
+  background-color:rgb(234, 90, 234);
+}
+
+.video{
+  width: 35%;
+  background-color: rgb(249, 146, 3);
+}
+
+.datascience{
+  width: 71%;
+  background-color: cornflowerblue;
+}
+
+.database{
+  width: 55%;
+  background-color:darkolivegreen;
+}
+.python{
+  width: 70%;
+  background-color: #93bbdb;
+}
+.js{
+  width: 62%;
+  background-color: brown;
+}
+.css{
+  width: 67%;
+  background-color: rgb(21, 0, 255);
+}
+
+.about__boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  gap: 1.875rem;
+  margin-top: 1.35rem;
+  column-gap: 9.875rem;
+}
+
+.about__box{
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.about__icon{
+  font-size: var(--h1-font);
+  color: #dedeea;
+}
+
+  .about__icon:hover{
+    font-size: var(--h1-font);
+    color: red;
+    outline: none;
+  }
+
+.about__title{
+  font-size: 1.875rem;
+}
+
+
+
+/* Default styles for larger screens */
+.about__container {
+  grid-template-columns: 3fr 9fr;
+}
+
+/* Responsive styles for medium-sized screens */
+@media only screen and (max-width: 1200px) {
+  .about__container {
+      grid-template-columns: 1fr; /* Display a single column for medium-sized screens */
+  }
+}
+
+.about__data {
+  position: relative;
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+}
+
+.about__data::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+}
+
+.about__skills {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Single column for medium-sized screens */
+  gap: 20px;
+}
+
+/* Add more media queries for smaller screens if needed */

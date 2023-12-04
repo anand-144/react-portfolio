@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@400;500;600;700&display=swap');
+
+/* Varibale css*/
+
+:root{
+  --first-color: hsl(353, 100%, 65%);
+  --title-color: hsl(244, 24%, 26%);
+  --text-color:hsl(244, 16%, 43%);
+  --body-color: hsl(258, 60%, 98%);
+  --container-color: #fff;
+  --body-font: 'Trebuchet MS';
+  --h1-font: 2.25rem;
+  --h2-font: 1.5rem;
+  --h3-font: 1.25rem;
+  --normal-font: 1rem;
+  --small-font: 0.875rem;
+  --smaller-font: 0.813rem;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+  --border-radius: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 1024px) {
+  :root{ 
+    --h1-font: 1.75rem;
+    --h2-font: 1.25rem;
+    --h3-font: 1rem;
+    --normal-font: 0.938rem;
+    --small-font: 0.813rem;
+    --smaller-font: 0.75rem;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body,button,input,textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+}
+
+body{
+  background-color: var(--body-color);
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+h1, h2, h3{
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+  line-height: 1.2;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+.container{
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+}
+
+.section{
+  padding-top: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.section__title{
+  font-size: var(--h1-font);
+  margin-left: 0.875rem;
+  font-weight: var(--font-bold);
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.section__title::before{
+  content: '';
+  background: url(./assets/dots-bg.svg);
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.875rem;
+  top: -0.875rem;
+}
+
+.btn{
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 5rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  display: inline-block;
+  background-color: var(--first-color);
+  font-weight: var(--font-bold);
+  color: whitesmoke;
+}
+
+.btn:hover{
+  color: wheat;
+}
+
+@keyframes button-push {
+  50%{
+    transform: scale(0.8);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+.btn:hover{
+  animation: button-push 0.5s linear 1;
+}
+
+.nav__item {
+  list-style-type: none; /* Removes the marker */
+  /* Add any other styles you need for nav__item */
+}
+
+.nav__logo {
+  display: block; 
+  font-weight: bold; 
+   font-size: 40px; 
+   color: var(--title-color);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dot{
+  color: var(--first-color);
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Customize the scrollbar handle or thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 179, 0);
+  border-radius: 10px;
+}
+
+/* Customize the scrollbar track when the handle is being dragged */
+::-webkit-scrollbar-track {
+  background-color: var(--title-color);
+}
+
+/* Customize the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: var(--first-color);
 }

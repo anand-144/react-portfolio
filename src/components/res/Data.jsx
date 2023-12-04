@@ -1,0 +1,55 @@
+const Data = [
+    {
+      id: 1,
+      category: "education",
+      icon: "icon-graduation",
+      year: "2008-2018",
+      title: "SSC",
+      desc: "Completed My SSC From New-English School Of Arts,Commerce,Science From Kalamboli Navi-mumbai.",
+      marks:"Overall Percentage: 64.60%",
+    },
+    {
+      id: 2,
+      category: "education",
+      icon: "icon-graduation",
+      year: "2018 - 2020",
+      title: "HSC",
+      desc: "Completed My HSC From Sushma Patil Vidyalaya and Junior College In Science Field From Kamothe Navi-mumbai.",
+      marks:"Overall Percentage: 66.65%",
+    },
+    {
+      id: 3,
+      category: "education",
+      icon: "icon-graduation",
+      year: "2020 - 2023",
+      title: "Bachelor's Degree",
+      desc: "Completed My Computer-Science Bachelor Degree From Pillai College of Arts, Commerce & Science ( Autonomous) From  Panvel Navi Mumbai.",
+      marks:"Overall CGPA: 8.3",
+    },
+    {
+      id: 4,
+      category: "experience",
+      icon: "icon-briefcase",
+      year: "Jun 2023 - Jul 2023",
+      title: "Data Analyst Intern",
+      desc: "Work At Data Analyst Intern In Tata Consultancy Services And Compeletd 4months of Data Analyst Course From TCS.",
+    },
+    {
+      id: 5,
+      category: "experience",
+      icon: "icon-briefcase",
+      year: "NullClass Dec 2022 - Jan 2023,  Bharat Intern Jul 2023 - Aug 2023" ,
+      title: "Web Developer Intern",
+      desc: "Done My Web Developer Internship from NullClass And Bharat Intern Which is Remote Internship In Which I Learn New Languages",
+    },
+    {
+      id: 6,
+      category: "experience",
+      icon: "icon-briefcase",
+      year: "Aug 2023 - Present",
+      title: "Front-End Developer",
+      desc: "Working As Forntend Develoepr in 72-Dragons",
+    },
+  ];
+  
+export default Data
